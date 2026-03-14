@@ -1,11 +1,18 @@
+"use client";
+
 import { Clock, DollarSign } from "lucide-react";
 import { Service } from "@/lib/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 interface ServiceCardProps {
   service: Service;
 }
 
 export default function ServiceCard({ service }: ServiceCardProps) {
+  const { copy } = useLanguage();
+  const translatedService =
+    copy.services[service.id as keyof typeof copy.services];
+
   return (
     <div className="group relative h-full flex flex-col bg-charcoal-800 border border-charcoal-600 rounded-lg p-6 transition-all duration-300 hover:border-gold-500/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-gold-500/5">
       {/* Gold top accent line */}
@@ -13,7 +20,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
 
       <div className="flex items-start justify-between gap-4 mb-3">
         <h3 className="text-offwhite font-semibold text-lg leading-tight group-hover:text-gold-500 transition-colors duration-200">
-          {service.name}
+          {translatedService.name}
         </h3>
         <span className="shrink-0 text-gold-500 font-bold text-xl">
           {service.price}
@@ -21,7 +28,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       </div>
 
       <p className="text-muted text-sm leading-relaxed mb-5 flex-1">
-        {service.description}
+        {translatedService.description}
       </p>
 
       <div className="flex items-center gap-4 text-xs text-muted">
@@ -31,7 +38,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
         </span>
         <span className="flex items-center gap-1.5">
           <DollarSign size={13} className="text-gold-500" />
-          Starting at {service.price}
+          {copy.common.startingAt} {service.price}
         </span>
       </div>
     </div>
