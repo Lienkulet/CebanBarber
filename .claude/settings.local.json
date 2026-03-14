@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(printf 'No\\\\nNo\\\\n')",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --import-alias=\"@/*\" --no-git --use-npm)",
+      "Read(//private/tmp/**)",
+      "Bash(npx create-next-app@latest ceban-barber --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --no-git --use-npm --yes)"
+    ]
+  }
+}
