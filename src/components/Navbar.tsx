@@ -7,7 +7,6 @@ import { Menu, X, Scissors } from "lucide-react";
 import { BOOKING_URL } from "@/lib/data";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
