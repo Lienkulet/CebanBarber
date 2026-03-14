@@ -262,7 +262,7 @@ export const translations = {
         "Barbering modern — fade-uri executate la milimetru, contururi clare, bărbi sculptate și bărbierit cu prosop fierbinte. Fără grabă. Fără compromisuri. Doar rezultate care vorbesc de la sine.",
       happyClients: "Clienți satisfăcuți",
       featuredEyebrow: "Ce oferim",
-      featuredTitle: "Servicii de referință",
+      featuredTitle: "Servicii",
       findUsEyebrow: "Unde ne găsești",
       findUsTitle: "Vizitează-ne",
       ctaEyebrow: "Ești pregătit?",
