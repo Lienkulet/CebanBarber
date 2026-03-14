@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { businessInfo, MAPS_EMBED_URL, MAPS_LINK } from "@/lib/data";
+import { businessInfo, MAPS_EMBED_URL, MAPS_LINK, BOOKING_URL } from "@/lib/data";
 import FadeIn from "@/components/animations/FadeIn";
 import StaggerReveal from "@/components/animations/StaggerReveal";
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-muted text-lg max-w-xl mx-auto">
-            Walk in or reach out ahead of time. We're here to make sure you
+            Walk in or reach out ahead of time. We&apos;re here to make sure you
             leave looking sharp.
           </p>
         </FadeIn>
@@ -150,10 +150,12 @@ export default function ContactPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href={`tel:${businessInfo.phone}`}
+                    href={BOOKING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gold-500 text-charcoal-950 font-bold tracking-widest uppercase text-sm rounded hover:bg-gold-400 transition-all duration-200"
                   >
-                    <Phone size={15} /> Call to Book
+                    <Phone size={15} /> Book Now
                   </a>
                   <a
                     href={`mailto:${businessInfo.email}`}

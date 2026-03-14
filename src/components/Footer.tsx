@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Scissors, Phone, MapPin } from "lucide-react";
-import { businessInfo } from "@/lib/data";
+import { businessInfo, SOCIAL_LINKS } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -20,14 +20,15 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4">
               {[
-                { label: "Instagram", abbr: "IG", href: "#" },
-                { label: "Facebook", abbr: "FB", href: "#" },
-                { label: "X / Twitter", abbr: "𝕏", href: "#" },
+                { label: "Instagram", abbr: "IG", href: SOCIAL_LINKS.instagram },
+                { label: "TikTok", abbr: "TT", href: SOCIAL_LINKS.tiktok },
               ].map(({ label, abbr, href }) => (
                 <a
                   key={label}
                   href={href}
                   aria-label={label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-9 h-9 flex items-center justify-center rounded border border-charcoal-600 text-muted text-xs font-bold hover:border-gold-500 hover:text-gold-500 transition-all duration-200"
                 >
                   {abbr}

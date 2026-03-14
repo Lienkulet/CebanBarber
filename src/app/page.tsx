@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Scissors, Star, Clock, Shield, MapPin, Phone, Mail } from "lucide-react";
-import { services, businessInfo, MAPS_EMBED_URL, MAPS_LINK } from "@/lib/data";
+import { services, businessInfo, MAPS_EMBED_URL, MAPS_LINK, BOOKING_URL } from "@/lib/data";
 import ServiceCard from "@/components/ServiceCard";
 import HeroReveal from "@/components/animations/HeroReveal";
 import FadeIn from "@/components/animations/FadeIn";
@@ -81,13 +81,15 @@ export default function HomePage() {
             delay={0.45}
             duration={0.6}
           >
-            <Link
-              href="/contact"
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-gold-500 text-charcoal-950 font-bold tracking-widest uppercase text-sm rounded hover:bg-gold-400 transition-all duration-200 hover:gap-3"
             >
               Book Now
               <ArrowRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
-            </Link>
+            </a>
             <Link
               href="/services"
               className="inline-flex items-center gap-2 px-8 py-4 border border-offwhite/30 text-offwhite font-semibold tracking-widest uppercase text-sm rounded hover:border-offwhite/60 hover:bg-offwhite/5 transition-all duration-200"
@@ -330,12 +332,14 @@ export default function HomePage() {
             Walk in or call ahead. We&apos;re ready when you are.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/contact"
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-gold-500 text-charcoal-950 font-bold tracking-widest uppercase text-sm rounded hover:bg-gold-400 transition-all duration-200"
             >
               Book Your Appointment <ArrowRight size={16} />
-            </Link>
+            </a>
             <a
               href={`tel:${businessInfo.phone}`}
               className="inline-flex items-center gap-2 px-8 py-4 border border-offwhite/30 text-offwhite font-semibold tracking-widest uppercase text-sm rounded hover:bg-offwhite/10 transition-all duration-200"

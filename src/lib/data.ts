@@ -30,7 +30,7 @@ export const services: Service[] = [
     description:
       "A precision cut tailored to your face shape and style. Includes consultation, shampoo, and finish.",
     duration: "45 min",
-    price: "$35",
+    price: "200 MDL",
     featured: true,
   },
   {
@@ -39,7 +39,7 @@ export const services: Service[] = [
     description:
       "Expert beard sculpting and shaping to define your look. Includes hot towel and beard oil treatment.",
     duration: "30 min",
-    price: "$25",
+    price: "150 MDL",
     featured: true,
   },
   {
@@ -48,7 +48,7 @@ export const services: Service[] = [
     description:
       "Classic straight-razor shave with hot towel prep, premium shaving cream, and moisturizing aftercare.",
     duration: "45 min",
-    price: "$45",
+    price: "250 MDL",
     featured: true,
   },
   {
@@ -57,7 +57,7 @@ export const services: Service[] = [
     description:
       "A gentle, fun haircut experience for boys under 12. Patient barbers who make kids feel at ease.",
     duration: "30 min",
-    price: "$20",
+    price: "120 MDL",
   },
   {
     id: "cut-beard",
@@ -65,7 +65,7 @@ export const services: Service[] = [
     description:
       "The complete package — full haircut paired with beard trim and shape. Best value for the full look.",
     duration: "75 min",
-    price: "$55",
+    price: "300 MDL",
   },
   {
     id: "fade",
@@ -73,7 +73,7 @@ export const services: Service[] = [
     description:
       "A tight, clean skin fade blended seamlessly into your desired length on top.",
     duration: "45 min",
-    price: "$40",
+    price: "220 MDL",
   },
   {
     id: "color",
@@ -81,7 +81,7 @@ export const services: Service[] = [
     description:
       "Natural-looking gray coverage or full color treatment using premium products.",
     duration: "60 min",
-    price: "$60",
+    price: "350 MDL",
   },
   {
     id: "scalp",
@@ -89,7 +89,7 @@ export const services: Service[] = [
     description:
       "Invigorating scalp massage with deep-conditioning treatment to promote healthy hair growth.",
     duration: "30 min",
-    price: "$30",
+    price: "180 MDL",
   },
 ];
 
@@ -190,6 +190,12 @@ export const MAPS_EMBED_URL =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.4211280134646!2d28.83378799999999!3d47.0319666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d002a8e5177%3A0xeac744f996984144!2sCeban%20barber!5e0!3m2!1sro!2s!4v1773492483422!5m2!1sro!2s";
 
 export const MAPS_LINK = "https://maps.app.goo.gl/HPYfNBHdDyXVtQed7";
+export const BOOKING_URL =
+  "https://n1387778.alteg.io/company/1322271/personal/select-master?o=";
+export const SOCIAL_LINKS = {
+  instagram: "https://www.instagram.com/cebanbarber?igsh=ZWsxM3d6NW1nd20=",
+  tiktok: "https://www.tiktok.com/@cebanthebarber",
+};
 
 export const businessInfo = {
   name: "CebanBarber",

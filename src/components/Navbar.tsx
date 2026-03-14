@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X, Scissors } from "lucide-react";
+import { BOOKING_URL } from "@/lib/data";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -22,10 +23,6 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
 
   return (
     <header
@@ -54,6 +51,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
+                  onClick={() => setIsOpen(false)}
                   className={`relative text-sm font-medium tracking-widest uppercase transition-colors duration-200 after:absolute after:left-0 after:-bottom-1 after:h-px after:bg-gold-500 after:transition-all after:duration-300 ${
                     pathname === link.href
                       ? "text-gold-500 after:w-full"
@@ -67,12 +65,14 @@ export default function Navbar() {
           </ul>
 
           {/* Desktop CTA */}
-          <Link
-            href="/contact"
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex items-center gap-2 px-5 py-2 border border-gold-500 text-gold-500 text-sm font-semibold tracking-widest uppercase rounded hover:bg-gold-500 hover:text-charcoal-950 transition-all duration-200"
           >
             Book Now
-          </Link>
+          </a>
 
           {/* Mobile hamburger */}
           <button
@@ -96,6 +96,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={() => setIsOpen(false)}
               className={`block px-4 py-3 text-sm font-medium tracking-widest uppercase rounded transition-colors duration-200 ${
                 pathname === link.href
                   ? "text-gold-500 bg-charcoal-800"
@@ -105,12 +106,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/contact"
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
             className="mt-3 mx-4 text-center px-5 py-3 border border-gold-500 text-gold-500 text-sm font-semibold tracking-widest uppercase rounded hover:bg-gold-500 hover:text-charcoal-950 transition-all duration-200"
           >
             Book Now
-          </Link>
+          </a>
         </div>
       </div>
     </header>

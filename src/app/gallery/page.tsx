@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { galleryImages } from "@/lib/data";
+import { galleryImages, SOCIAL_LINKS } from "@/lib/data";
 import GalleryGrid from "@/components/GalleryGrid";
 import FadeIn from "@/components/animations/FadeIn";
 
@@ -41,7 +41,9 @@ export default function GalleryPage() {
           <p className="text-muted text-sm leading-relaxed">
             Follow us on Instagram{" "}
             <a
-              href="#"
+              href={SOCIAL_LINKS.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gold-500 hover:text-gold-300 transition-colors duration-200"
             >
               @cebanbarber

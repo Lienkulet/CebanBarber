@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { services } from "@/lib/data";
+import { services, BOOKING_URL } from "@/lib/data";
 import ServiceCard from "@/components/ServiceCard";
 import FadeIn from "@/components/animations/FadeIn";
 import StaggerReveal from "@/components/animations/StaggerReveal";
@@ -34,16 +33,19 @@ export default function ServicesPage() {
       {/* Services grid */}
       <section className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <StaggerReveal
-            className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-            stagger={0.07}
-            y={50}
-            scale={0.97}
-          >
-            {services.map((service) => (
-              <ServiceCard key={service.id} service={service} />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {services.map((service, index) => (
+              <FadeIn
+                key={service.id}
+                className="h-full"
+                y={50}
+                delay={index * 0.08}
+                duration={0.75}
+              >
+                <ServiceCard service={service} />
+              </FadeIn>
             ))}
-          </StaggerReveal>
+          </div>
         </div>
       </section>
 
@@ -82,12 +84,14 @@ export default function ServicesPage() {
           <p className="text-muted mb-8">
             Visit us at our location or give us a call to set up your appointment.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href={BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gold-500 text-charcoal-950 font-bold tracking-widest uppercase text-sm rounded hover:bg-gold-400 transition-all duration-200"
           >
             Book Now <ArrowRight size={16} />
-          </Link>
+          </a>
         </div>
       </FadeIn>
     </>
