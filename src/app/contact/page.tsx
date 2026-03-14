@@ -4,7 +4,10 @@ import ContactPageContent from "@/components/pages/ContactPageContent";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Find CebanBarber — address, phone, hours of operation, and map.",
+    "Contactează CebanBarber — adresă, telefon, program de lucru și hartă. Str. Ion Doncev 2, Chișinău. Suntem deschiși zilnic.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

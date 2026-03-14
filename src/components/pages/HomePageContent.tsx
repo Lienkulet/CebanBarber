@@ -199,7 +199,7 @@ export default function HomePageContent() {
               />
               <div className="absolute bottom-6 left-6 bg-gold-500 text-charcoal-950 px-5 py-3 rounded">
                 <CountUp
-                  end={1000}
+                  end={10000}
                   suffix="+"
                   className="text-2xl font-extrabold leading-none"
                 />

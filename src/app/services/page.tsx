@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import ServicesPageContent from "@/components/pages/ServicesPageContent";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Servicii",
   description:
-    "Explore CebanBarber's full menu — haircuts, beard trims, hot towel shaves, fades, and more.",
+    "Descoperă toate serviciile CebanBarber — tunsori, contur barbă, bărbierit cu prosop fierbinte, skin fade și multe altele. Prețuri accesibile în Chișinău.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 export default function ServicesPage() {

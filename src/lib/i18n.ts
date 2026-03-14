@@ -41,9 +41,9 @@ export const translations = {
     home: {
       eyebrow: "Est. 2024 — Chișinău, Moldova",
       heroLine1: "PRECISION",
-      heroLine1Accent: "CUTS.",
+      heroLine1Accent: "CUTS",
       heroLine2: "TIMELESS",
-      heroLine2Accent: "STYLE.",
+      heroLine2Accent: "STYLE",
       heroDescription:
         "Timeless craft. Modern style. Leave looking like a king.",
       perks: [
@@ -66,7 +66,7 @@ export const translations = {
       ],
       aboutEyebrow: "About Us",
       aboutTitle: "More Than a Haircut.",
-      aboutTitleAccent: "An Experience.",
+      aboutTitleAccent: "An Experience",
       aboutBody1:
         "Founded by Nikita Ceban in 2024, CebanBarber was built on a simple belief: every man deserves to look and feel his best. From the moment you sit in our chair, you're in the hands of barbers dedicated to precision.",
       aboutBody2:
@@ -77,8 +77,8 @@ export const translations = {
       findUsEyebrow: "Find Us",
       findUsTitle: "Come Visit",
       ctaEyebrow: "Ready?",
-      ctaTitle: "Your Best Look Starts Here.",
-      ctaBody: "Walk in or call ahead. We're ready when you are.",
+      ctaTitle: "Your Best Look Starts Here",
+      ctaBody: "Walk in or call ahead. We're ready when you are",
       mapsBadge: "CebanBarber",
       contactTodayValue: "Mon – Fri: 9 AM – 7 PM",
     },
@@ -230,9 +230,9 @@ export const translations = {
     home: {
       eyebrow: "Din 2024 — Chișinău, Moldova",
       heroLine1: "TUNSORI",
-      heroLine1Accent: "PERFECTE.",
+      heroLine1Accent: "PERFECTE",
       heroLine2: "STIL",
-      heroLine2Accent: "MODERN.",
+      heroLine2Accent: "MODERN",
       heroDescription:
         "Măiestrie reală. Stil modern. Ieși din salon ca un alt om.",
       perks: [
@@ -255,7 +255,7 @@ export const translations = {
       ],
       aboutEyebrow: "Despre noi",
       aboutTitle: "Mai mult decât o tunsoare.",
-      aboutTitleAccent: "O experiență.",
+      aboutTitleAccent: "O experiență",
       aboutBody1:
         "Fondat de Nikita Ceban în 2024, CebanBarber s-a născut dintr-o convingere simplă: fiecare bărbat merită să arate și să se simtă impecabil. Din clipa în care te așezi în fotoliu, ești în grija unor barberi pentru care precizia nu e opțională.",
       aboutBody2:
@@ -266,8 +266,8 @@ export const translations = {
       findUsEyebrow: "Unde ne găsești",
       findUsTitle: "Vizitează-ne",
       ctaEyebrow: "Ești pregătit?",
-      ctaTitle: "Cel mai bun look al tău începe aici.",
-      ctaBody: "Vino direct sau sună înainte. Suntem gata pentru tine.",
+      ctaTitle: "Cel mai bun look al tău începe aici",
+      ctaBody: "Vino direct sau sună înainte. Suntem gata pentru tine",
       mapsBadge: "CebanBarber",
       contactTodayValue: "Lun – Dum: 9:00 – 19:00",
     },
@@ -418,10 +418,10 @@ export const translations = {
     },
     home: {
       eyebrow: "С 2024 года — Кишинёв, Молдова",
-      heroLine1: "СТРИЖКИ",
-      heroLine1Accent: "ВЫСШЕГО КЛАССА.",
-      heroLine2: "СТИЛЬ,",
-      heroLine2Accent: "КОТОРЫЙ ОСТАЁТСЯ.",
+      heroLine1: "ТОЧНЫЕ",
+      heroLine1Accent: "СТРИЖКИ",
+      heroLine2: "ЧИСТЫЙ",
+      heroLine2Accent: "СТИЛЬ",
       heroDescription:
         "Настоящее мастерство. Современный стиль. Выходи другим человеком.",
       perks: [
@@ -444,7 +444,7 @@ export const translations = {
       ],
       aboutEyebrow: "О нас",
       aboutTitle: "Больше, чем стрижка.",
-      aboutTitleAccent: "Это опыт.",
+      aboutTitleAccent: "Это опыт",
       aboutBody1:
         "CebanBarber основан Никитой Чебаном в 2024 году на простой, но важной идее: каждый мужчина достоин выглядеть безупречно. Как только вы садитесь в кресло, вы в руках мастеров, для которых точность — не опция, а стандарт.",
       aboutBody2:
@@ -455,8 +455,8 @@ export const translations = {
       findUsEyebrow: "Как нас найти",
       findUsTitle: "Приходите к нам",
       ctaEyebrow: "Готовы?",
-      ctaTitle: "Лучший образ начинается здесь.",
-      ctaBody: "Заходите без записи или позвоните заранее. Мы вас ждём.",
+      ctaTitle: "Лучший образ начинается здесь",
+      ctaBody: "Заходите без записи или позвоните заранее. Мы вас ждём",
       mapsBadge: "CebanBarber",
       contactTodayValue: "Пн – Пт: 9:00 – 19:00",
     },
