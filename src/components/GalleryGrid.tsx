@@ -30,7 +30,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               <button
                 key={image.id}
                 onClick={() => setSelected(image)}
-                className="group relative w-full overflow-hidden rounded-lg bg-charcoal-800 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500"
+                className="group relative w-full overflow-hidden rounded-lg border border-charcoal-600/70 bg-charcoal-800 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-500"
                 style={{ aspectRatio: `${image.width} / ${image.height}` }}
                 aria-label={`View: ${image.alt}`}
               >
@@ -43,9 +43,18 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   placeholder="blur"
                   blurDataURL={BLUR_PLACEHOLDER}
                 />
+                <div className="pointer-events-none absolute inset-0 border border-offwhite/0 transition-colors duration-300 group-hover:border-offwhite/15" />
+                <div className="pointer-events-none absolute left-0 top-0 h-16 w-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <span className="absolute left-0 top-0 h-1 w-10 bg-gold-500" />
+                  <span className="absolute left-0 top-0 h-10 w-1 bg-gold-500" />
+                </div>
+                <div className="pointer-events-none absolute bottom-0 right-0 h-16 w-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <span className="absolute bottom-0 right-0 h-1 w-10 bg-gold-500" />
+                  <span className="absolute bottom-0 right-0 h-10 w-1 bg-gold-500" />
+                </div>
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
-                  <p className="text-offwhite text-xs font-medium tracking-wide">
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 md:p-4">
+                  <p className="text-offwhite text-xs font-semibold tracking-[0.28em] uppercase">
                     {image.alt}
                   </p>
                 </div>
