@@ -190,13 +190,14 @@ export default function HomePageContent() {
               className="relative rounded-lg overflow-hidden aspect-4/5 bg-charcoal-800"
             >
               <Image
-                src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=800&q=80"
+                src="/gallery/photo3.jpg"
                 alt={copy.home.aboutEyebrow}
                 fill
                 className="object-cover"
                 placeholder="blur"
                 blurDataURL={BLUR_PLACEHOLDER}
               />
+              <div className="absolute inset-0 bg-charcoal-950/20" />
               <div className="absolute bottom-6 left-6 bg-gold-500 text-charcoal-950 px-5 py-3 rounded">
                 <CountUp
                   end={10000}

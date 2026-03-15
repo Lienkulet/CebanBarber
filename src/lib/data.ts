@@ -13,6 +13,7 @@ export interface GalleryImage {
   alt: string;
   width: number;
   height: number;
+  type?: "image" | "video";
 }
 
 export interface TeamMember {
@@ -96,66 +97,75 @@ export const services: Service[] = [
 export const galleryImages: GalleryImage[] = [
   {
     id: "g1",
-    src: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&q=80",
+    src: "/gallery/photo3.jpg",
     alt: "Classic gentleman's haircut",
     width: 600,
     height: 800,
   },
   {
     id: "g2",
-    src: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80",
+    src: "/gallery/photo8.jpg",
     alt: "Skin fade with texture on top",
     width: 600,
     height: 900,
   },
   {
     id: "g3",
-    src: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80",
+    src: "/gallery/photo1.jpg",
     alt: "Sharp beard trim and shape",
     width: 600,
     height: 700,
   },
   {
     id: "g4",
-    src: "https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=600&q=80",
-    alt: "Hot towel shave in progress",
-    width: 600,
-    height: 800,
+    src: "/gallery/photo2.jpg",
+    alt: "Haircut in progress",
+    width: 847,
+    height: 1280,
   },
   {
     id: "g5",
-    src: "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&q=80",
-    alt: "Taper fade haircut",
-    width: 600,
-    height: 750,
+    src: "/gallery/photo5.jpg",
+    alt: "Precision fade",
+    width: 857,
+    height: 1280,
   },
   {
     id: "g6",
-    src: "https://images.unsplash.com/photo-1622286342621-4bd5a5359a6a?w=600&q=80",
-    alt: "Barbershop interior ambiance",
-    width: 600,
-    height: 900,
+    src: "/gallery/photo6.jpg",
+    alt: "Fresh cut finish",
+    width: 1027,
+    height: 1280,
   },
   {
     id: "g7",
-    src: "https://images.unsplash.com/photo-1534297635766-a262cdcb8ee4?w=600&q=80",
-    alt: "Pompadour style haircut",
-    width: 600,
-    height: 800,
+    src: "/gallery/photo7.jpg",
+    alt: "Beard sculpting",
+    width: 827,
+    height: 1280,
   },
   {
     id: "g8",
-    src: "https://images.unsplash.com/photo-1520338801623-dadb7f8e3d7d?w=600&q=80",
-    alt: "Modern undercut style",
-    width: 600,
-    height: 700,
+    src: "/gallery/photo4.jpg",
+    alt: "Signature style",
+    width: 844,
+    height: 1280,
   },
   {
     id: "g9",
-    src: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&q=80",
-    alt: "Textured crop haircut",
-    width: 600,
-    height: 850,
+    src: "/gallery/video1.mp4",
+    alt: "Barber at work",
+    width: 9,
+    height: 16,
+    type: "video",
+  },
+  {
+    id: "g10",
+    src: "/gallery/video2.mp4",
+    alt: "Styling session",
+    width: 9,
+    height: 16,
+    type: "video",
   },
 ];
 
@@ -187,7 +197,7 @@ export const teamMembers: TeamMember[] = [
 ];
 
 export const MAPS_EMBED_URL =
-  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.4211280134646!2d28.83378799999999!3d47.0319666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97d002a8e5177%3A0xeac744f996984144!2sCeban%20barber!5e0!3m2!1sro!2s!4v1773492483422!5m2!1sro!2s";
+  "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d679.8532016208417!2d28.833060269633815!3d47.032129912277604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDAxJzU1LjciTiAyOMKwNTAnMDEuMyJF!5e0!3m2!1sen!2s!4v1773613307542!5m2!1sen!2s";
 
 export const MAPS_LINK = "https://maps.app.goo.gl/HPYfNBHdDyXVtQed7";
 export const BOOKING_URL =

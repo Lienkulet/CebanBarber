@@ -40,6 +40,16 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   style={{ aspectRatio: `${image.width} / ${image.height}` }}
                   aria-label={altText}
                 >
+                  {image.type === "video" ? (
+                    <video
+                      src={image.src}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                  ) : (
                   <Image
                     src={image.src}
                     alt={altText}
@@ -49,6 +59,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                     placeholder="blur"
                     blurDataURL={BLUR_PLACEHOLDER}
                   />
+                  )}
                   <div className="pointer-events-none absolute inset-0 border border-offwhite/0 transition-colors duration-300 group-hover:border-offwhite/15" />
                   <div className="pointer-events-none absolute left-0 top-0 h-16 w-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <span className="absolute left-0 top-0 h-1 w-10 bg-gold-500" />
@@ -87,6 +98,16 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
             className="relative max-w-3xl w-full max-h-[85vh] rounded-lg overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
+            {selected.type === "video" ? (
+              <video
+                src={selected.src}
+                className="object-contain w-full max-h-[85vh]"
+                controls
+                autoPlay
+                loop
+                playsInline
+              />
+            ) : (
             <Image
               src={selected.src}
               alt={copy.galleryAlts[selected.id as keyof typeof copy.galleryAlts]}
@@ -96,6 +117,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               placeholder="blur"
               blurDataURL={BLUR_PLACEHOLDER}
             />
+            )}
             <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent px-4 py-3">
               <p className="text-offwhite text-sm">
                 {copy.galleryAlts[selected.id as keyof typeof copy.galleryAlts]}
