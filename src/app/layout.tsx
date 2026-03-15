@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.jpeg",
         width: 1200,
         height: 630,
         alt: "CebanBarber — Barbershop Premium în Chișinău",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "CebanBarber — Barbershop Premium în Chișinău",
     description:
       "Tunsori perfecte, contur barbă și bărbierit clasic în inima Chișinăului. Str. Ion Doncev 2.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.jpeg"],
   },
 };
 

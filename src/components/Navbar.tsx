@@ -157,14 +157,63 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Mobile hamburger */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-offwhite hover:text-gold-500 transition-colors duration-200"
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile: language picker + hamburger */}
+          <div className="md:hidden flex items-center gap-2">
+            <div className="relative" data-lang-menu>
+              <button
+                type="button"
+                onClick={() => setIsLangOpen((open) => !open)}
+                className="inline-flex items-center gap-1.5 rounded border border-charcoal-600 bg-charcoal-900/70 px-3 py-1.5 text-xs font-semibold tracking-[0.28em] uppercase transition-all duration-200 hover:border-gold-500/60 hover:text-offwhite"
+                aria-haspopup="menu"
+                aria-expanded={isLangOpen}
+                aria-label="Select language"
+              >
+                <span className="text-gold-500">{language}</span>
+                <ChevronDown
+                  size={13}
+                  className={`text-gold-500 transition-transform duration-200 ${isLangOpen ? "rotate-180" : ""}`}
+                />
+              </button>
+
+              <div
+                className={`absolute right-0 top-full mt-2 min-w-[8.5rem] overflow-hidden rounded border border-charcoal-600 bg-charcoal-950/98 p-2 backdrop-blur-md transition-all duration-200 z-10 ${
+                  isLangOpen
+                    ? "pointer-events-auto translate-y-0 opacity-100"
+                    : "pointer-events-none -translate-y-1 opacity-0"
+                }`}
+              >
+                <div className="mb-2 border-b border-charcoal-600 px-2 pb-2 text-[0.65rem] font-semibold tracking-[0.32em] uppercase text-gold-500">
+                  {copy.nav.language}
+                </div>
+                {languageOptions.map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() => {
+                      setLanguage(option);
+                      setIsLangOpen(false);
+                    }}
+                    className={`flex w-full items-center justify-between rounded px-3 py-2 text-sm font-semibold tracking-[0.24em] uppercase transition-colors duration-200 ${
+                      language === option
+                        ? "bg-charcoal-800 text-offwhite"
+                        : "text-muted hover:bg-charcoal-800 hover:text-offwhite"
+                    }`}
+                  >
+                    <span>{option}</span>
+                    <span className={`h-2 w-2 rounded-full ${language === option ? "bg-gold-500" : "bg-charcoal-600"}`} />
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-offwhite hover:text-gold-500 transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -189,27 +238,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <div className="mx-4 mt-4 rounded border border-charcoal-600 bg-charcoal-900/80 p-3">
-            <p className="mb-3 text-[0.65rem] font-semibold tracking-[0.32em] uppercase text-gold-500">
-              {copy.nav.language}
-            </p>
-            <div className="grid grid-cols-3 gap-2">
-              {languageOptions.map((option) => (
-                <button
-                  key={option}
-                  type="button"
-                  onClick={() => setLanguage(option)}
-                  className={`rounded px-3 py-2 text-sm font-semibold tracking-[0.24em] uppercase transition-colors duration-200 ${
-                    language === option
-                      ? "bg-charcoal-800 text-offwhite"
-                      : "border border-charcoal-600 text-muted hover:border-gold-500/60 hover:text-offwhite"
-                    }`}
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
-            </div>
           <a
             href={BOOKING_URL}
             target="_blank"
