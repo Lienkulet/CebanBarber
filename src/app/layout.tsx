@@ -14,7 +14,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cebanbarber.md"),
+  // metadataBase: new URL("https://cebanbarber.md"), - change back later
+  metadataBase: new URL("https://ceban-barber.vercel.app/"),
   title: {
     default: "CebanBarber — Tunsori Perfecte. Stil Modern. Chișinău",
     template: "%s | CebanBarber Chișinău",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.jpeg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "CebanBarber — Barbershop Premium în Chișinău",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     title: "CebanBarber — Barbershop Premium în Chișinău",
     description:
       "Tunsori perfecte, contur barbă și bărbierit clasic în inima Chișinăului. Str. Ion Doncev 2.",
-    images: ["/og-image.jpeg"],
+    images: ["/og-image.jpg"],
   },
 };
 
