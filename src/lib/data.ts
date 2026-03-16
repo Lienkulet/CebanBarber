@@ -131,6 +131,22 @@ export const galleryImages: GalleryImage[] = [
     width: 827,
     height: 1280,
   },
+   {
+    id: "g1",
+    src: "/gallery/video3.mp4",
+    alt: "Barber at work",
+    width: 9,
+    height: 16,
+    type: "video",
+  },
+   {
+    id: "g4",
+    src: "/gallery/video4.mp4",
+    alt: "Barber at work",
+    width: 9,
+    height: 16,
+    type: "video",
+  },
   {
     id: "g8",
     src: "/gallery/photo4.jpg",
