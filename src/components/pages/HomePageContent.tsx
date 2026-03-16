@@ -29,7 +29,6 @@ import { useLanguage } from "@/components/LanguageProvider";
 const BLUR_PLACEHOLDER =
   "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgUE/8QAIhAAAQQCAgMBAAAAAAAAAAAAAQIDBBEhMQUSQVH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ai7FkNQ2e3BVfmZkn4gFrStfPRB8x27AAB+YqS2rXF5s22OOqvxM6jaXlX7QAAAAASUVORK5CYII=";
 
-const featuredServices = services.filter((s) => s.featured);
 
 const perkIcons = [Scissors, Star, Clock, Shield];
 
@@ -250,8 +249,8 @@ export default function HomePageContent() {
             </h2>
           </FadeIn>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {featuredServices.map((service, index) => (
+          <div className="grid sm:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {services.map((service, index) => (
               <FadeIn
                 key={service.id}
                 className="h-full"

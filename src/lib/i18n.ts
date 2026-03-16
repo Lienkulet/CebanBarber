@@ -133,14 +133,14 @@ export const translations = {
     },
     services: {
       haircut: {
-        name: "Signature Haircut",
+        name: "Haircut",
         description:
           "A precision cut tailored to your face shape and style. Includes consultation, shampoo, and finish.",
       },
       "beard-trim": {
         name: "Beard Trim & Shape",
         description:
-          "Expert beard sculpting and shaping to define your look. Includes hot towel and beard oil treatment.",
+          "Expert beard sculpting and shaping to define your look.",
       },
       "hot-towel-shave": {
         name: "Hot Towel Shave",
@@ -327,14 +327,14 @@ export const translations = {
     },
     services: {
       haircut: {
-        name: "Tunsoare Signature",
+        name: "Tunsoare",
         description:
           "O tunsoare de precizie, gândită în funcție de forma feței și stilul tău. Include consultație, spălare și finisare.",
       },
       "beard-trim": {
         name: "Contur și definire barbă",
         description:
-          "Sculptarea profesionistă a bărbii pentru un contur clar și un look bine definit. Include prosop fierbinte și tratament cu ulei de barbă.",
+          "Sculptarea profesionistă a bărbii pentru un contur clar și un look bine definit.",
       },
       "hot-towel-shave": {
         name: "Bărbierit cu prosop fierbinte",
@@ -347,7 +347,7 @@ export const translations = {
           "O experiență relaxată și prietenoasă pentru băieți până în 12 ani, cu barberi răbdători care știu să creeze o atmosferă confortabilă.",
       },
       "cut-beard": {
-        name: "Tunsoare & Barbă",
+        name: "Tunsoare & Barbă Combo",
         description:
           "Pachetul complet — tunsoare și definire a bărbii într-o singură vizită. Cel mai bun raport calitate-preț pentru un look desăvârșit.",
       },
@@ -521,14 +521,14 @@ export const translations = {
     },
     services: {
       haircut: {
-        name: "Авторская стрижка",
+        name: "Стрижка",
         description:
           "Точная стрижка, выстроенная под форму вашего лица и стиль. Включает консультацию, мытьё головы и финальную укладку.",
       },
       "beard-trim": {
         name: "Коррекция и оформление бороды",
         description:
-          "Профессиональная работа с бородой для чёткого, ухоженного образа. Включает горячее полотенце и масло для бороды.",
+          "Профессиональная работа с бородой для чёткого, ухоженного образа.",
       },
       "hot-towel-shave": {
         name: "Бритьё с горячим полотенцем",
@@ -541,7 +541,7 @@ export const translations = {
           "Спокойная и комфортная стрижка для мальчиков до 12 лет. Мастера, которые умеют работать с детьми.",
       },
       "cut-beard": {
-        name: "Стрижка + борода",
+        name: "Стрижка + борода комплекс",
         description:
           "Полный комплекс за одно посещение — стрижка и оформление бороды. Лучший выбор для завершённого образа.",
       },

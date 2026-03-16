@@ -27,7 +27,7 @@ export interface TeamMember {
 export const services: Service[] = [
   {
     id: "haircut",
-    name: "Signature Haircut",
+    name: "Haircut",
     description:
       "A precision cut tailored to your face shape and style. Includes consultation, shampoo, and finish.",
     duration: "45 min",
@@ -38,27 +38,10 @@ export const services: Service[] = [
     id: "beard-trim",
     name: "Beard Trim & Shape",
     description:
-      "Expert beard sculpting and shaping to define your look. Includes hot towel and beard oil treatment.",
+      "Expert beard sculpting and shaping to define your look.",
     duration: "30 min",
-    price: "150 MDL",
+    price: "100 MDL",
     featured: true,
-  },
-  {
-    id: "hot-towel-shave",
-    name: "Hot Towel Shave",
-    description:
-      "Classic straight-razor shave with hot towel prep, premium shaving cream, and moisturizing aftercare.",
-    duration: "45 min",
-    price: "250 MDL",
-    featured: true,
-  },
-  {
-    id: "kids-cut",
-    name: "Kids Cut",
-    description:
-      "A gentle, fun haircut experience for boys under 12. Patient barbers who make kids feel at ease.",
-    duration: "30 min",
-    price: "120 MDL",
   },
   {
     id: "cut-beard",
@@ -67,30 +50,6 @@ export const services: Service[] = [
       "The complete package — full haircut paired with beard trim and shape. Best value for the full look.",
     duration: "75 min",
     price: "300 MDL",
-  },
-  {
-    id: "fade",
-    name: "Skin Fade",
-    description:
-      "A tight, clean skin fade blended seamlessly into your desired length on top.",
-    duration: "45 min",
-    price: "220 MDL",
-  },
-  {
-    id: "color",
-    name: "Hair Color / Gray Blending",
-    description:
-      "Natural-looking gray coverage or full color treatment using premium products.",
-    duration: "60 min",
-    price: "350 MDL",
-  },
-  {
-    id: "scalp",
-    name: "Scalp Treatment",
-    description:
-      "Invigorating scalp massage with deep-conditioning treatment to promote healthy hair growth.",
-    duration: "30 min",
-    price: "180 MDL",
   },
 ];
 
