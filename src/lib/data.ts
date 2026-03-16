@@ -133,7 +133,7 @@ export const galleryImages: GalleryImage[] = [
   },
    {
     id: "g1",
-    src: "/gallery/video3.mp4",
+    src: "/gallery/video33.mp4",
     alt: "Barber at work",
     width: 9,
     height: 16,
@@ -141,7 +141,7 @@ export const galleryImages: GalleryImage[] = [
   },
    {
     id: "g4",
-    src: "/gallery/video4.mp4",
+    src: "/gallery/video44.mp4",
     alt: "Barber at work",
     width: 9,
     height: 16,
