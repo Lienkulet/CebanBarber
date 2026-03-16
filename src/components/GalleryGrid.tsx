@@ -25,9 +25,9 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
   return (
     <>
       {/* Masonry grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+      <div className="grid grid-cols-3 gap-2 md:gap-4">
         {cols.map((col, colIdx) => (
-          <div key={colIdx} className="flex flex-col gap-3 md:gap-4">
+          <div key={colIdx} className="flex flex-col gap-2 md:gap-4">
             {col.map((image) => {
               const altText =
                 copy.galleryAlts[image.id as keyof typeof copy.galleryAlts];
@@ -68,11 +68,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   <div className="pointer-events-none absolute bottom-0 right-0 h-16 w-16 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <span className="absolute bottom-0 right-0 h-1 w-10 bg-gold-500" />
                     <span className="absolute bottom-0 right-0 h-10 w-1 bg-gold-500" />
-                  </div>
-                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3 md:p-4">
-                    <p className="text-offwhite text-xs font-semibold tracking-[0.28em] uppercase">
-                      {altText}
-                    </p>
                   </div>
                 </button>
               );
@@ -118,11 +113,6 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               blurDataURL={BLUR_PLACEHOLDER}
             />
             )}
-            <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/70 to-transparent px-4 py-3">
-              <p className="text-offwhite text-sm">
-                {copy.galleryAlts[selected.id as keyof typeof copy.galleryAlts]}
-              </p>
-            </div>
           </div>
         </div>
       )}
