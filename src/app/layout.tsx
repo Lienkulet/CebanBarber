@@ -14,8 +14,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://cebanbarber.md"), - change back later
-  metadataBase: new URL("https://ceban-barber.vercel.app/"),
+  metadataBase: new URL("https://cebanbarber.md"),
+  // metadataBase: new URL("https://ceban-barber.vercel.app/"),
   title: {
     default: "CebanBarber — Tunsori Perfecte. Stil Modern. Chișinău",
     template: "%s | CebanBarber Chișinău",
