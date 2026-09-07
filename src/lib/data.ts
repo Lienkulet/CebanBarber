@@ -31,7 +31,7 @@ export const services: Service[] = [
     description:
       "A precision cut tailored to your face shape and style. Includes consultation, shampoo, and finish.",
     duration: "45 min",
-    price: "200 MDL",
+    price: "250 MDL",
     featured: true,
   },
   {
@@ -49,7 +49,7 @@ export const services: Service[] = [
     description:
       "The complete package — full haircut paired with beard trim and shape. Best value for the full look.",
     duration: "75 min",
-    price: "300 MDL",
+    price: "350 MDL",
   },
 ];
 
