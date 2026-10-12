@@ -201,7 +201,8 @@ export const teamMembers: TeamMember[] = [
 export const MAPS_EMBED_URL ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2655.8264707954513!2d28.831629176284753!3d47.02911737114266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3560165497%3A0x9fee308f0d97503!2sStrada%20Alexandru%20cel%20Bun%2095%2C%20Chi%C8%99in%C4%83u%2C%20Moldova!5e1!3m2!1sro!2s!4v1791799659597!5m2!1sro!2s";
   // "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d679.8532016208417!2d28.833060269633815!3d47.032129912277604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDAxJzU1LjciTiAyOMKwNTAnMDEuMyJF!5e0!3m2!1sen!2s!4v1773613307542!5m2!1sen!2s";
 
-export const MAPS_LINK = "https://maps.app.goo.gl/HPYfNBHdDyXVtQed7";
+// export const MAPS_LINK = "https://maps.app.goo.gl/HPYfNBHdDyXVtQed7";
+export const MAPS_LINK = "https://maps.app.goo.gl/sNPSPkiiET2yi9xz6";
 export const BOOKING_URL =
   "https://n1387778.alteg.io/company/1322271/personal/select-master?o=";
 export const SOCIAL_LINKS = {
