@@ -1,7 +1,7 @@
 export type Language = "EN" | "RO" | "RU";
 
 export const languageOptions: Language[] = ["EN", "RO", "RU"];
-export const defaultLanguage: Language = "EN";
+export const defaultLanguage: Language = "RO";
 export const languageStorageKey = "cebanbarber-language";
 
 export const translations = {
