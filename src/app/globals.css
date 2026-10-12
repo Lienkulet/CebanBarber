@@ -1,4 +1,10 @@
+/* Load at runtime so builds do not depend on Turbopack's next/font Google importer. */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
+
+:root {
+  --font-montserrat: "Montserrat";
+}
 
 @theme {
   --color-charcoal-950: #0a0a0a;
